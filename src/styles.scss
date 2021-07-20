@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$white: #EEEDEE;
+$black: #242527;
+$h1-desktop: 70px;
+$h2-desktop: 50px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,a,input,label,button{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $white;
+}
+
+h1{
+    font-size: $h1-desktop;
+}
+h2{
+    font-size: $h2-desktop;
+}

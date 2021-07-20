@@ -1,0 +1,5 @@
+<section id="carousel">
+    <button *ngFor="let project of projects" (click)="selectProject(project.id)">
+    <img src="{{project.img}}">
+    </button>
+</section>

@@ -1,0 +1,47 @@
+$black: #242527;
+$white: #EEEDEE;
+
+#home{
+    height: 100vh;
+    width: calc(100vw - 5vw);
+    background: $black;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    background: #242527;
+}
+
+#home .about{
+    height: 100vh;
+    width: calc(100vw - 5vw);
+    background: url('../../assets/personal.jpg') no-repeat center fixed;
+    background-size: cover;   
+}
+#home .about .info{
+    height: 100vh;
+    width: calc(100vw - 5vw - 100px);
+    padding: 0 50px;
+    background: rgba(0, 0, 0, 0.36);
+
+    display: flex;
+    justify-content: center;
+    align-items: left; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#home .about .info h1{
+    border-bottom: 2px solid $white;
+}
+
+
+@media screen and (max-width: 600px) {
+    #home{
+        height: auto;
+        width: 100vw;
+        position: absolute;
+        top: 5vh;
+        left: 0;
+    }
+    
+}

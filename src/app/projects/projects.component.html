@@ -1,0 +1,30 @@
+<section id="projects">
+    <div class="project" 
+    *ngIf="project != undefined"
+    style="background: url('{{project.img}}') no-repeat center fixed;"
+    >
+        <button id="closeInfoButton" (click)="closeInfo()">
+            <img *ngIf="info == false" src="../../assets/eye-open.png">
+            <img *ngIf="info == true" src="../../assets/eye-close.png">
+        </button>
+        <div class="info none" id="info_block">
+            <div class="info-content">
+                <h1>{{project.name}}</h1>
+                <h2>Cosas</h2>
+                <p>{{project.desc}}</p>
+                <button>Saber Más</button>
+            </div>
+        </div>
+    </div>
+    <div class="project" *ngIf="project == undefined">
+        <div class="info">
+            <div class="info-content" >
+                <h1>Mis Proyectos</h1>
+                <h2>Haz click en un proyecto para verlo</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<app-carousel
+(new_current_project)="actualProject($event)"
+></app-carousel>

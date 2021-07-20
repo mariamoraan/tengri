@@ -1,0 +1,105 @@
+$black: #242527;
+$white: #EEEDEE;
+
+#projects{
+    height: 100vh;
+    width: calc(100vw - 5vw);
+    background: $black;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    background: $black;
+}
+
+#projects .project{
+    height: 100vh;
+    width: calc(100vw - 5vw);
+    background: url('../../assets/projects.jpg') no-repeat center fixed;
+    background-size: cover;  
+    position: relative;
+    overflow: hidden;
+}
+
+#projects .project .info{
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.507);
+    
+}
+
+#projects .project .info .info-content{
+    padding: 50px 30px;
+}
+
+#projects .project .info h2, 
+#projects .project .info h1,
+#projects .project .info p{
+    text-align: left;
+    margin-bottom: 10px;
+    color: $white;
+}
+
+#projects .project .info h1{
+    font-size: 40px;
+}
+
+#projects .project .info h2{
+    font-size: 20px;
+}
+
+#projects .project .info p{
+    text-align: justify;
+}
+
+#projects .project .info button{
+    color: $black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.none{
+    display: none;
+}
+
+#closeInfoButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20000000;
+    background: $white;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#closeInfoButton img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #projects{
+        height: calc(100vh - 5vh);
+        width: 100vw;
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        height: auto;
+    }
+    #projects .project .info{
+        width: 100vw;
+    }
+    
+}
